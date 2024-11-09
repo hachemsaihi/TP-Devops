@@ -1,0 +1,24 @@
+blinker==1.8.2
+cachetools==5.5.0
+chardet==5.2.0
+click==8.1.7
+colorama==0.4.6
+coverage==7.6.4
+distlib==0.3.9
+filelock==3.16.1
+Flask==3.0.3
+iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
+itsdangerous==2.2.0
+Jinja2==3.1.4
+MarkupSafe==3.0.2
+packaging @ file:///croot/packaging_1720101850331/work
+platformdirs==4.3.6
+pluggy==1.5.0
+pyproject-api==1.8.0
+pytest @ file:///croot/pytest_1717793244625/work
+pytest-cov==5.0.0
+setuptools==75.1.0
+tox==4.23.2
+virtualenv==20.27.0
+Werkzeug==3.0.4
+wheel==0.44.0
