@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 visitors_count = 0
 
+
 @app.route("/")
 def hello_world():
     return "Hello, World!"
@@ -23,24 +24,6 @@ def visit():
         return jsonify({"message": f"Welcome, {username}!"}), 200
     else:
         return jsonify({"error": "No username provided!"}), 400
-
-@app.route("/divide", methods=["GET"])
-def divide():
-    try:
-        numerator = int(request.args.get("numerator", 1))
-        denominator = int(request.args.get("denominator", 1))
-        result = numerator / denominator
-        return jsonify({"result": result}), 200
-    except ZeroDivisionError:
-        return jsonify({"error": "Cannot divide by zero!"}), 400
-    except ValueError:
-        return jsonify({"error": "Invalid input!"}), 400
-
-
-@app.route("/user", methods=["POST"])
-def create_user():
-    user_data = request.json
-    return jsonify({"user": user_data}), 201
 
 
 if __name__ == "__main__":
