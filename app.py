@@ -26,5 +26,9 @@ def visit():
         return jsonify({"error": "No username provided!"}), 400
 
 
+def func():
+    return None
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
